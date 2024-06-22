@@ -1,0 +1,108 @@
+/* Estilos del formulario de sugerencias */
+#formulario-section {
+    height: 600px;
+}
+
+#footer-form {
+    height: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 10px;
+}
+
+#footer-form h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#footer-form form {
+    display: grid;
+    gap: 10px;
+}
+
+#footer-form form input[type="text"],
+#footer-form form input[type="email"],
+#footer-form form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#footer-form form textarea {
+    resize: vertical;
+}
+
+#footer-form form button,
+#footer-form form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-borrar-ultimo {
+    position: absolute;
+    bottom: 30px;
+    right: 60%;
+    background-color: #dc3545;
+    color: white;
+}
+
+#footer-form form button#close-form:hover {
+    background-color: #c82333;
+}
+
+.btn-borrar-todo {
+    position: absolute;
+    bottom: 30px;
+    right: 45%;
+    background-color: #e20084;
+    color: white;
+}
+
+#footer-form form input[type="submit"] {
+    position: absolute;
+    bottom: 30px;
+    right: 32%;
+    background-color: #1f3a93;
+    color: white;
+}
+
+#footer-form form input[type="submit"]:hover {
+    background-color: #12285b;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0;
+    display: block;
+}
+
+.footer-contact .suggestion-link {
+    height: 25px;
+    width: 150px; /* Modificado para que sea más largo y visible */
+    background-color: rgba(10, 10, 10, 0.61);
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 50%;
+    padding: 10px;
+    color: white;
+    display: inline-block; /* Asegura que la animación funcione */
+    text-align: center; 
+    transition: color 0.3s, transform 0.3s; /* Agrega transición para color y transformación */
+}
+
+.footer-contact .suggestion-link:hover {
+    color: #ff0000; /* Cambia a tu color preferido */
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+}

@@ -1,0 +1,12 @@
+.descTierra{
+    position: absolute;
+    height: 85%;
+    width: 75%;
+    top: 20px;
+    right: 0;
+    background-color: rgba(180, 0, 0, 0.637);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px black;
+}

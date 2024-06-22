@@ -1,0 +1,92 @@
+/* Estilos generales */
+a {
+    color: rgb(255, 208, 0);
+}
+
+#infMM, #infAG, #infMO, #infGW, .eventos {
+    position: absolute;
+    height: 85%;
+    width: 50%;
+    top: 20px;
+    right: 0;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#infMM {
+    background-color: rgba(180, 0, 0, 0.637);
+}
+#infMM .Vinculos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 5px;
+}
+
+#infAG {
+    background-color: rgba(255, 35, 35, 0.8);
+}
+#infAG .Vinculos {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    right: 5px;
+    
+}
+
+#infMO {
+    background-color: rgba(43, 28, 253, 0.623);
+}
+#infMO .Vinculos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 5px;
+}
+
+#infGW {
+    background-color: rgba(255, 35, 255, 0.8);
+}
+#infGW .Vinculos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 5px;
+}
+
+.eventos {
+    background-color: rgba(255, 12, 12, 0.8);
+}
+
+@media screen and (max-width: 1024px) {
+    #infMM, #infAG, #infMO, #infGW, .eventos {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #infMM, #infAG, #infMO, #infGW, .eventos {
+        width: 90%;
+        top: 10px;
+        height: 80%;
+    }
+    #infMM .Vinculos, #infAG .Vinculos, #infMO .Vinculos, #infGW .Vinculos {
+        position: relative;
+        bottom: 0;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #infMM, #infAG, #infMO, #infGW, .eventos {
+        width: 100%;
+        top: 5px;
+        height: 75%;
+    }
+    #infMM .Vinculos, #infAG .Vinculos, #infMO .Vinculos, #infGW .Vinculos {
+        position: relative;
+        bottom: 0;
+        padding-top: 15px;
+    }
+}
