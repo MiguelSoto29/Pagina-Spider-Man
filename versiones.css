@@ -4,13 +4,14 @@
     left: 23%;
     width: 50%;
     top: 0;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.26);
+    padding: 15px;
+    background-color: rgba(25, 78, 255, 0.26);
     border-radius: 10px;
     margin-top: 5%;
     margin-right: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.2em;
+    font-size: 1em;
+    color: white;
 }
 
 #carrusel-section {
