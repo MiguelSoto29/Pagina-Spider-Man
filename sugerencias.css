@@ -90,19 +90,19 @@
 
 .footer-contact .suggestion-link {
     height: 25px;
-    width: 150px; /* Modificado para que sea más largo y visible */
+    width: 150px; 
     background-color: rgba(10, 10, 10, 0.61);
     border-radius: 10px;
     margin: 10px;
     padding-top: 50%;
     padding: 10px;
     color: white;
-    display: inline-block; /* Asegura que la animación funcione */
+    display: inline-block; 
     text-align: center; 
-    transition: color 0.3s, transform 0.3s; /* Agrega transición para color y transformación */
+    transition: color 0.3s, transform 0.3s; 
 }
 
 .footer-contact .suggestion-link:hover {
-    color: #ff0000; /* Cambia a tu color preferido */
-    transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+    color: #ff0000; 
+    transform: scale(1.1); 
 }
