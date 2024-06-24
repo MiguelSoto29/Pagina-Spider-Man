@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Validación de nombre sin números
             const nombreInput = formulario.querySelector('input[name="nombre"]');
             const nombre = nombreInput.value.trim();
-            const regex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$/; // Expresión regular para solo letras y espacios
+            const regex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$/; 
 
             if (nombre === '') {
                 document.getElementById('nombre-error').textContent = 'El nombre no puede estar vacío.';
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Validación de correo electrónico
             const emailInput = formulario.querySelector('input[name="email"]');
             const email = emailInput.value.trim();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresión regular para validar correo electrónico
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
 
             if (email === '') {
                 document.getElementById('email-error').textContent = 'El correo electrónico no puede estar vacío.';
@@ -92,9 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 formIsValid = false;
             }
 
-            // Envío exitoso si el formulario es válido
             if (formIsValid) {
-                alert('Sugerencia enviada con éxito.');
+                alert('Sugerencia enviada con éxito. Muchas gracias por su ayuda.');
                 formulario.reset(); // Reiniciar el formulario
             }
         });

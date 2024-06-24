@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             slideIndex = 1;
         }
         slides[slideIndex - 1].classList.add("active");
-        setTimeout(showSlides, 4000); // Cambia imagen cada 4 segundos
+        setTimeout(showSlides, 4000); 
     }
 
     function plusSlides(n) {
