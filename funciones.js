@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const suggestionLink = document.querySelector('.suggestion-link');
     const footerForm = document.querySelector('.footer-form');
@@ -99,3 +101,54 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 }
 });
+//Carrusel de Versiones
+document.addEventListener('DOMContentLoaded', (event) => {
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("carrusel-item");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].classList.add("active");
+        setTimeout(showSlides, 4000); 
+    }
+
+    function plusSlides(n) {
+        slideIndex += n - 1;
+        showSlides();
+    }
+});
+//Carrusel de Imagenes
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.querySelector('.anterior');
+    const nextButton = document.querySelector('.siguiente');
+    const carouselImages = document.querySelector('.carrusel-imagenes');
+    const images = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        carouselImages.style.transform = `translateX(${-index * 100}%)`;
+    }
+    prevButton.addEventListener('click', function() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        showImage(currentIndex);
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        showImage(currentIndex);
+    });
+
+    setInterval(function() {
+        nextButton.click();
+    }, 4000); //4 segundos
+});
+
+
