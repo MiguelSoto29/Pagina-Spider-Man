@@ -13,7 +13,6 @@
     font-size: 1em;
     color: white;
 }
-
 #carrusel-section {
     position: absolute;
     left: 75%;
@@ -25,7 +24,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .carrusel {
     position: relative;
     width: 100%;
@@ -33,14 +31,12 @@
     overflow: hidden;
     border-radius: 10px;
 }
-
 .carrusel-inner {
     display: flex;
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
 }
-
 .carrusel-item {
     min-width: 100%;
     height: 100%;
@@ -52,17 +48,14 @@
     top: 0;
     left: 0;
 }
-
 .carrusel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .carrusel-item.active {
     opacity: 1;
 }
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -77,12 +70,10 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }

@@ -2,7 +2,6 @@
 #formulario-section {
     height: 600px;
 }
-
 #footer-form {
     height: 90%;
     max-width: 600px;
@@ -11,19 +10,16 @@
     background-color: rgba(0, 0, 0, 0.637);
     border-radius: 10px;
 }
-
 #footer-form h3 {
     color: white;
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
-
 #footer-form form {
     display: grid;
     gap: 10px;
 }
-
 #footer-form form input[type="text"],
 #footer-form form input[type="tel"],
 #footer-form form input[type="email"],
@@ -35,11 +31,9 @@
     font-size: 1em;
     box-sizing: border-box;
 }
-
 #footer-form form textarea {
     resize: vertical;
 }
-
 #footer-form form button,
 #footer-form form input[type="submit"] {
     padding: 10px 20px;
@@ -49,7 +43,6 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .btn-borrar-ultimo {
     position: absolute;
     bottom: 30px;
@@ -57,7 +50,6 @@
     background-color: #dc3545;
     color: white;
 }
-
 .btn-borrar-todo {
     position: absolute;
     bottom: 30px;
@@ -65,18 +57,14 @@
     background-color: #e20084;
     color: white;
 }
-
 #footer-form form button:hover,
 #footer-form form input[type="submit"]:hover {
     background-color: #0056b3;
 }
-
 .error-message {
     color: red;
     font-size: 0.8em;
 }
-
-
 #footer-form form input[type="submit"] {
     position: absolute;
     bottom: 30px;
@@ -84,18 +72,15 @@
     background-color: #1f3a93;
     color: white;
 }
-
 #footer-form form input[type="submit"]:hover {
     background-color: #12285b;
 }
-
 .error-message {
     color: red;
     font-size: 0.875em;
     margin-top: 0;
     display: block;
 }
-
 .footer-contact .suggestion-link {
     height: 25px;
     width: 150px; 
@@ -109,7 +94,6 @@
     text-align: center; 
     transition: color 0.3s, transform 0.3s; 
 }
-
 .footer-contact .suggestion-link:hover {
     color: #ff0000; 
     transform: scale(1.1); 
