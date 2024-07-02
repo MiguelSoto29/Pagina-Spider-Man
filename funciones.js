@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const suggestionLink = document.querySelector('.suggestion-link');
     const footerForm = document.querySelector('.footer-form');
@@ -18,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (btnBorrarUltimo) {
         btnBorrarUltimo.addEventListener('click', function() {
-            const campos = formulario.querySelectorAll('input[type="text"], input[type="email"], textarea');
+            const campos = formulario.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea');
             for (let i = campos.length - 1; i >= 0; i--) {
                 if (campos[i].value !== '') {
                     campos[i].value = '';
@@ -27,10 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
     if (btnBorrarTodo) {
         btnBorrarTodo.addEventListener('click', function() {
-            const campos = formulario.querySelectorAll('input[type="text"], input[type="email"], textarea');
+            const campos = formulario.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea');
             campos.forEach(campo => campo.value = '');
         });
     }
@@ -44,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Limpiar mensajes de error anteriores
             document.getElementById('nombre-error').textContent = '';
             document.getElementById('apellido-error').textContent = '';
+            document.getElementById('telefono-error').textContent = '';
             document.getElementById('email-error').textContent = '';
             document.getElementById('sugerencia-error').textContent = '';
 
@@ -71,7 +69,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('apellido-error').textContent = 'El apellido no debe contener números ni caracteres especiales.';
                 formIsValid = false;
             }
+            // Validación de número de teléfono
+            const telefonoInput = formulario.querySelector('input[name="telefono"]');
+            const telefonoValue = telefonoInput.value.trim();
+            const telefonoRegex = /^\d{10,18}$/;
 
+            if (telefonoValue && !telefonoRegex.test(telefonoValue)) {
+                document.getElementById('telefono-error').textContent = 'El número de teléfono debe contener solo números y tener entre 10 y 18 dígitos.';
+                formIsValid = false;
+            }
             // Validación de correo electrónico
             const emailInput = formulario.querySelector('input[name="email"]');
             const email = emailInput.value.trim();

@@ -25,6 +25,7 @@
 }
 
 #footer-form form input[type="text"],
+#footer-form form input[type="tel"],
 #footer-form form input[type="email"],
 #footer-form form textarea {
     width: calc(100% - 20px);
@@ -57,10 +58,6 @@
     color: white;
 }
 
-#footer-form form button#close-form:hover {
-    background-color: #c82333;
-}
-
 .btn-borrar-todo {
     position: absolute;
     bottom: 30px;
@@ -68,6 +65,17 @@
     background-color: #e20084;
     color: white;
 }
+
+#footer-form form button:hover,
+#footer-form form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+}
+
 
 #footer-form form input[type="submit"] {
     position: absolute;
